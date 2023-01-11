@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="logo.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cmpe 360 Project 02</title>
+	</head>
+	<body>
+		<video
+			id="video"
+			playsinline
+			webkit-playsinline
+			muted
+			loop
+			autoplay
+			width="320"
+			height="240"
+			src="../static/space.mp4"
+			style="display: none"
+		></video>
+		<canvas class="webgl"></canvas>
+		<div id="loading"></div>
+		<div
+			id="orbitControlsDomElem"
+			style="position: absolute; width: 100vw; height: 100vh; opacity: 0; cursor: grab"
+		></div>
+		<script type="module" src="/main.js"></script>
+	</body>
+</html>
